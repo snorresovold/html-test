@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Oppfølging</h2>
+        <form>
+            <div class="form-group">
+                <label for="jaNei">Ja/Nei</label>
+                <input type="text" id="jaNei" name="jaNei">
+            </div>
+            <div class="form-group">
+                <label for="kommentar">Kommentar</label>
+                <input type="text" id="kommentar" name="kommentar">
+            </div>
+            <div class="form-group">
+                <label for="reparasjon">Send tilbud på reparasjon</label>
+                <input type="checkbox" id="reparasjon" name="reparasjon">
+                <label for="reparasjon">Merke, avkryssing 1 med heldekkende fyll</label>
+            </div>
+            <div class="form-group">
+                <label for="utbedring">Send tilbud på anbefalt utbedring</label>
+                <input type="checkbox" id="utbedring" name="utbedring">
+                <label for="utbedring">Slutt å følge Merke med heldekkende fyll</label>
+            </div>
+            <div class="form-group">
+                <label for="oppdater">Oppdatere kundeopplysninger</label>
+                <input type="checkbox" id="oppdater" name="oppdater">
+                <label for="oppdater">Korsformet Merke med heldekkende fyll</label>
+            </div>
+            <div class="form-group">
+                <label for="fakturakommentar">Fakturakommentar</label>
+                <textarea id="fakturakommentar" name="fakturakommentar"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="signaturTKS">Signatur TKS Heis</label>
+                <input type="text" id="navnTKS" name="navnTKS" placeholder="Navn">
+                <input type="text" id="datoTKS" name="datoTKS" placeholder="Dato">
+                <input type="text" id="signaturTKS" name="signaturTKS" placeholder="Signatur">
+            </div>
+            <div class="form-group">
+                <label for="signaturKunde">Signatur kunde</label>
+                <input type="text" id="navnKunde" name="navnKunde" placeholder="Navn">
+                <input type="text" id="datoKunde" name="datoKunde" placeholder="Dato">
+                <input type="text" id="signaturKunde" name="signaturKunde" placeholder="Signatur">
+            </div>
+            <div class="form-group">
+                <label for="notatSignering">Notat til signering</label>
+                <textarea id="notatSignering" name="notatSignering"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
