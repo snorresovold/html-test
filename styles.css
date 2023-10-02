@@ -1,60 +1,43 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+table {
+    border-collapse: collapse;
+    width: 40%;
 }
 
-.form-container {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+table, th, td {
+    border: 1px solid black;
 }
 
-.form-group {
-    margin-bottom: 10px;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-textarea {
-    width: 100%;
+th, td {
     padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-bottom: 5px;
+    text-align: center;
 }
 
-input[type="checkbox"] {
-    margin-right: 5px;
-}
-
-button {
-    background-color: #4CAF50;
+th {
+    background-color: #013763; /* Light gray background for header */
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
 }
 
-button:hover {
-    background-color: #45a049;
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate row color */
 }
-
-button:focus {
-    outline: none;
+.dataContainer {
+    background: #e6eaee;
+    width: 20%;
 }
-
-textarea {
+.headerText {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background: #013763;
+    color: white;
+}
+.commentSection {
     height: 100px;
+    background-color: #fff;
+    border: 1px solid #ccc;
 }
-
+.commentContainer {
+    width: 20%;
+}

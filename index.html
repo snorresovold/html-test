@@ -7,54 +7,138 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="form-container">
-        <h2>Oppfølging</h2>
-        <form>
-            <div class="form-group">
-                <label for="jaNei">Ja/Nei</label>
-                <input type="text" id="jaNei" name="jaNei">
-            </div>
-            <div class="form-group">
-                <label for="kommentar">Kommentar</label>
-                <input type="text" id="kommentar" name="kommentar">
-            </div>
-            <div class="form-group">
-                <label for="reparasjon">Send tilbud på reparasjon</label>
-                <input type="checkbox" id="reparasjon" name="reparasjon">
-                <label for="reparasjon">Merke, avkryssing 1 med heldekkende fyll</label>
-            </div>
-            <div class="form-group">
-                <label for="utbedring">Send tilbud på anbefalt utbedring</label>
-                <input type="checkbox" id="utbedring" name="utbedring">
-                <label for="utbedring">Slutt å følge Merke med heldekkende fyll</label>
-            </div>
-            <div class="form-group">
-                <label for="oppdater">Oppdatere kundeopplysninger</label>
-                <input type="checkbox" id="oppdater" name="oppdater">
-                <label for="oppdater">Korsformet Merke med heldekkende fyll</label>
-            </div>
-            <div class="form-group">
-                <label for="fakturakommentar">Fakturakommentar</label>
-                <textarea id="fakturakommentar" name="fakturakommentar"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="signaturTKS">Signatur TKS Heis</label>
-                <input type="text" id="navnTKS" name="navnTKS" placeholder="Navn">
-                <input type="text" id="datoTKS" name="datoTKS" placeholder="Dato">
-                <input type="text" id="signaturTKS" name="signaturTKS" placeholder="Signatur">
-            </div>
-            <div class="form-group">
-                <label for="signaturKunde">Signatur kunde</label>
-                <input type="text" id="navnKunde" name="navnKunde" placeholder="Navn">
-                <input type="text" id="datoKunde" name="datoKunde" placeholder="Dato">
-                <input type="text" id="signaturKunde" name="signaturKunde" placeholder="Signatur">
-            </div>
-            <div class="form-group">
-                <label for="notatSignering">Notat til signering</label>
-                <textarea id="notatSignering" name="notatSignering"></textarea>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
+    <h1>Ettersyn Personheis</h1>
+    <div class="dataContainer">
+        <p class="headerText">Kundeinformasjon</p>
+        <p>Kundenummer:</p>
+        <p>Kundenavn:</p>
+        <p>Adresse:</p>
+        <p>Postnummer:</p>
+        <p>Sted:</p>
+        <p>Telefon:</p>
+        <p>E-post:</p>
+        <br>
+        <p>Kontaktperson:</p>
+        <p>Telefon:</p>
+        <p>E-post:</p>
+        <br>
+        <p>Best. nummer:</p>
+        <p>Kunde ref:</p>
+    </div>
+    <div class="dataContainer">
+        <p class="headerText">Anleggsinformasjon</p>
+        <p>Heisnummer:</p>
+        <p>Beskrivelse:</p>
+        <p>Adresse:</p>
+        <p>Postnummer:</p>
+        <p>Sted:</p>
+        <br>
+        <p>Modell:</p>
+        <p>Nyttelast:</p>
+        <p>Antall stopp:</p>
+        <p>Løftehøyde:</p>
+    </div>
+    <div class="dataContainer">
+        <p class="headerText">Oppdragsinformasjon</p>
+        <p>Ordrenummer:</p>
+        <p>TKS Montør:</p>
+    </div>
+    <div>
+        <table>
+            <colgroup>
+                <col span="1" style="width: 5%;">
+                <col span="1" style="width: 45%;">
+                <col span="1" style="width: 5%;">
+                <col span="1" style="width: 45%;">
+             </colgroup>
+            <tr>
+                <th>Punkt</th>
+                <th>Oppgave</th>
+                <th>Utført</th>
+                <th>Kommentar</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div>
+        <table>
+            <colgroup>
+                <col span="1" style="width: 47.5%;">
+                <col span="1" style="width: 5%;">
+                <col span="1" style="width: 47.5%;">
+                <tr>
+                    <th>Oppfølging</th>
+                    <th>Ja/Nei</th>
+                    <th>Kommentar</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+             </colgroup>
+        </table>
+    </div>
+    <div class="commentContainer">
+        <p class="headerText">Fakturakommentar</p>
+        <div class="commentSection">
+        </div>
+    </div>
+    <div class="dataContainer">
+        <p class="headerText">Signatur TKS Heis</p>
+        <p>Navn:</p>
+        <p>Dato:</p>
+        <p>Signatur:</p>
+    </div>
+    <div class="dataContainer">
+        <p class="headerText">Signatur Kunde</p>
+        <p>Navn:</p>
+        <p>Dato:</p>
+        <p>Signatur:</p>
+    </div>
+    <div class="commentContainer">
+        <p class="headerText">Notat til signering</p>
+        <div class="commentSection">
+        </div>
     </div>
 </body>
 </html>
